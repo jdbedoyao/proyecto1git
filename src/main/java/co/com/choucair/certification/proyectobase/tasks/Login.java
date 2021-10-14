@@ -17,10 +17,14 @@ public class Login implements Task {
     @Override
     public <T extends Actor> void performAs(T actor){
       actor.attemptsTo(Click.on(ChoucairLoginPage.LOGIN_BUTTON),
-              Enter.theValue("10770623").into(ChoucairLoginPage.INPUT_USER),
-              Enter.theValue("Choucair2021*").into(ChoucairLoginPage.INPUT_PASSWORD),
+              Enter.theValue("JOSE DARIO").into(ChoucairLoginPage.INPUT_FISTNAME),
+              Enter.theValue("BEDOYA ORTIZ").into(ChoucairLoginPage.INPUT_LASTNAME),
+              Enter.theValue("jdbedoyaortiz@gmail.com").into(ChoucairLoginPage.INPUT_EMAIL),
+              Enter.theValue("MARCH").into(ChoucairLoginPage.INPUT_MONTH),
+              Enter.theValue("17").into(ChoucairLoginPage.INPUT_DAY),
+              Enter.theValue("1981").into(ChoucairLoginPage.INPUT_YEAR),
+              Enter.theValue("Spanish").into(ChoucairLoginPage.INPUT_LANGUAGES),
               Click.on(ChoucairLoginPage.ENTER_BUTTON)
-
        );
 
     }

@@ -85,22 +85,22 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@29dec06
+<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@f4b1f51
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/academyChoucair.feature:6 ?[0m# Search for a automation course
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[33m1 undefined?[0m)
-0m56,476s
+1m4,953s
 
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=94.0.4606.61)
+org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=94.0.4606.81)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-6AELDF7', ip: '192.168.10.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+System info: host: 'DESKTOP-6AELDF7', ip: '192.168.10.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\DASNEY\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8fcc7b421afc8c8471bbc45b03b40c16
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\DASNEY\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62759}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f907aec7c2c1807071c88e414903e65
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -112,13 +112,11 @@ Session ID: 8fcc7b421afc8c8471bbc45b03b40c16
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at net.serenitybdd.core.pages.ClearContents.lambda$static$0(ClearContents.java:16)
-	at net.serenitybdd.core.pages.ClearContents.ofElement(ClearContents.java:31)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1261)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1263)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:812)
 	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$9wvkbknG.performAs$accessor$Mu8cybKb(Unknown Source)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$MzXLd4DY.performAs$accessor$t7QzQhlV(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,12 +127,12 @@ Session ID: 8fcc7b421afc8c8471bbc45b03b40c16
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$9wvkbknG.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$MzXLd4DY.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at co.com.choucair.certification.proyectobase.tasks.Login.performAs(Login.java:19)
-	at co.com.choucair.certification.proyectobase.tasks.Login$ByteBuddy$gGH2Vb4e.performAs$accessor$CgJfrh34(Unknown Source)
+	at co.com.choucair.certification.proyectobase.tasks.Login$ByteBuddy$UinLZ635.performAs$accessor$ZH7MHAA5(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,7 +143,7 @@ Session ID: 8fcc7b421afc8c8471bbc45b03b40c16
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.certification.proyectobase.tasks.Login$ByteBuddy$gGH2Vb4e.performAs(Unknown Source)
+	at co.com.choucair.certification.proyectobase.tasks.Login$ByteBuddy$UinLZ635.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
@@ -156,12 +154,12 @@ Session ID: 8fcc7b421afc8c8471bbc45b03b40c16
 
 You can implement missing steps with the snippets below:
 
-
 @Then(&quot;^he finds the course called resources Recursos Automatización Bancolombia$&quot;)
 public void heFindsTheCourseCalledResourcesRecursosAutomatizaciónBancolombia() {
     // Write code here that turns the phrase above into concrete actions
     throw new PendingException();
 }
+
 
 </pre>
 </span>
@@ -210,7 +208,7 @@ TEST STARTED: Search for a automation course
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 29-sep-2021 21:51:07</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 13-oct-2021 22:46:51</p>
 </div>
 </div>
 </body>
